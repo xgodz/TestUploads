@@ -39,7 +39,7 @@ var treasure, treasureImg;
 var hand, handImg;
 var paddle3, paddle4, paddle5
 
-//var bgMusic;
+var bgMusic;
 let sound;
 
 var score = 0;
@@ -109,17 +109,17 @@ function setup() {
     playButton.addImage("play", playButtonImg);
     playButton.scale = 0.099;
 
-    l1 = createSprite(width-800, height-500, 500, 500);
+    l1 = createSprite(400,height/2);
     l1.addImage("l1", l1Img);
     l1.scale = 0.7;
     l1.visible = false;
 
-    l2 = createSprite(100,100, 200, 200);
+    l2 = createSprite(700,height/2);
     l2.addImage("l2", l2Img);
     l2.scale = 0.7;
     l2.visible = false;
 
-    l3 = createSprite(width-400, height-500, 500, 500);
+    l3 = createSprite(1000,height/2);
     l3.addImage("l3", l3Img);
     l3.scale = 0.7;
     l3.visible = false;
@@ -153,9 +153,9 @@ function setup() {
     arrow.scale   = 0.3;
     arrow.visible = false;
 
-    jungle = createSprite(width-600, height-260, 100, 100);
+    jungle = createSprite(width/2,height/2);
     jungle.addImage("jungle", jungleImg);
-    jungle.scale   = 2.2;
+    jungle.scale   = 2.5;
     jungle.visible = false;
 
     monkey = createSprite(width/2+320, height-55, 400, 400);
